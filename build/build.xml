@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="build" name="Create Runnable Jar for Project MirrorImageDatasetGenerator">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="../workspace"/>
+    <property name="dir.jarfile" value="../latest"/>
+    <target name="build">
+        <jar destfile="${dir.jarfile}/Mirror.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="codedcosmos.mirror.datasetgenerator.core.Mirror"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.workspace}/MirrorImageDatasetGenerator/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/MirrorImageDatasetGenerator/lib/jcodec-0.2.5.jar"/>
+        </jar>
+    </target>
+</project>
