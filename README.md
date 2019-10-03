@@ -15,4 +15,5 @@ Mirror is an application that allows you to easily generate images for a dataset
 
 
 * GUI Interface!
+
 ![](screenshots/main-tab.png)
