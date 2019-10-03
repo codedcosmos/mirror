@@ -12,4 +12,7 @@ Mirror is an application that allows you to easily generate images for a dataset
 * Supports counter measures to prevent overfitting when training neural networks. With horizontal and vertical jitter, as well as horizontal and vertical flipping.
 * Easy importing and exporting of images
 * Multithreading support (UP to 32 CPU threads)
+
+
 * GUI Interface!
+![](screenshots/main-tab.png)
